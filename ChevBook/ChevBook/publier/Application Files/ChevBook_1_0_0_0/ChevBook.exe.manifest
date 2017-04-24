@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ChevBook.exe" version="1.0.0.0" publicKeyToken="0df78ead5f20f2ed" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChevBook" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ChevBook.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options du manifeste de contrôle de compte d'utilisateur
+          Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+          nœud requestedExecutionLevel par l'une des propositions suivantes :
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si vous souhaitez utiliser la virtualisation de fichiers et du Registre pour la 
+         compatibilité descendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChevBook.exe" size="28608">
+      <assemblyIdentity name="ChevBook" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r8uZAD5LjJl8gGM+cBzdOETH00Md2g52fK84arUxOVo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="424448">
+      <assemblyIdentity name="MySql.Data" version="6.9.9.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z1JCyodj5/UiC37FF0m11VPrQRt8tszqKfa8jk+yNYc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ChevBook.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DOMBTSIG\aalbert" issuerKeyHash="359e5297430d47df875feb670f668c164dc6baa0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oHtVVzAttBQT2RCzVHahdp83Jv0CzILErYR4/m/Sias=</DigestValue></Reference></SignedInfo><SignatureValue>whzNDLpF4lHvfv50tVuw26aKAsWtNyZJGf55CAhUpWD5uQqTPqqZTQgjUU4YlZWaZ9H6tQnbUGspB7S3lmgPACoMvz85IhWDDFE4mAD/O6DxehMnb8RD90v0fDjkADVDW/wayKlN+03X12Xpn4SyEk5dWQsH0GxYRVYQTCG7beE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zRcxzwpEs4LkAYyvnTZgD4pjqeKsiseem+InpooRYMaooPJQZno61rY2UyDOBNZRMF4edz0hCR+Jd3yllBWX5Ttv43t4Ur00n3rjAaLf4dm5fOl3eLfkIIhQGtS/jUefh9NsnGCFTDPfjYerxq/Zi34FGXCSjTfKk8NU6yLe2j0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ab89d26ffe7884adc482cc02fd26379f76a17654b310d91314b42d3057557ba0" Description="" Url=""><as:assemblyIdentity name="ChevBook.exe" version="1.0.0.0" publicKeyToken="0df78ead5f20f2ed" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DOMBTSIG\aalbert</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>U06FmRjtrvoQQP/+75yEemC1C66AqvR7vHuMbwk5g4M=</DigestValue></Reference></SignedInfo><SignatureValue>dC5BDpmxi+521F+On179ZiVMCnJCzMrTMhHgXnx0i2HQZGITP2nqg9PCNhisz8CrnKuv6BPyO4wKybA6b/tyPUxefNEV26qtFjeSS6SRMjkLW6FwMY7ehXOo0gfHv4aFlKGuLs81X//lyaK6wMs0KIcKvVa9/XJH6Cs1suEbMgU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zRcxzwpEs4LkAYyvnTZgD4pjqeKsiseem+InpooRYMaooPJQZno61rY2UyDOBNZRMF4edz0hCR+Jd3yllBWX5Ttv43t4Ur00n3rjAaLf4dm5fOl3eLfkIIhQGtS/jUefh9NsnGCFTDPfjYerxq/Zi34FGXCSjTfKk8NU6yLe2j0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQevCPuU7mlqdJN2o25M4yPTANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAARABPAE0AQgBUAFMASQBHAFwAYQBhAGwAYgBlAHIAdDAeFw0xNzAzMjcxMjAzMDNaFw0xODAzMjcxODAzMDNaMCsxKTAnBgNVBAMeIABEAE8ATQBCAFQAUwBJAEcAXABhAGEAbABiAGUAcgB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNFzHPCkSzguQBjK+dNmAPimOp4qyKx56b4iemihFgxqig8lBmejrWtjZTIM4E1lEwXh53PSEJH4l3fKWUFZflO2/je3hSvTSfeuMBot/h2bl86Xd4t+QgiFAa1L+NR5+H02ycYIVMM9+Nh6vGr9mLfgUZcJKNN8qTw1TrIt7aPQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAKrxRnj9NeJLuDUqeKUtmaZZeQXB9ndWU+lSffZbdjA7LGbGO3mEUzGPX26U00Z4SJLWADYdMaJCDBjpYE03CR8pxVkZreajARORpYz1eGfhDU7YW+bmCMXhh05uWhTx9nFSDdUeRQwr0e8npEF+/r3k6s482R6ZAyEXPf8h+LT</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

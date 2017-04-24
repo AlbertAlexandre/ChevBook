@@ -1,0 +1,19 @@
+﻿<Window x:Name="Chev_Book" x:Class="ChevBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChevBook"
+        mc:Ignorable="d"
+        Title="Chev'Book" Height="388.235" Width="692.843" Loaded="Window_Loaded">
+    <Window.ContextMenu>
+        <ContextMenu/>
+    </Window.ContextMenu>
+    <Menu x:Name="menu" HorizontalAlignment="Left" Height="25" VerticalAlignment="Bottom" Width="515" Margin="0,0,0,322">
+        <MenuItem x:Name="MenuConnexion" Header="Connexion" Click="MenuItem_Click_3"/>
+        <MenuItem x:Name="MenuLogement" Header="Logements" Click="MenuItem_Click_1" IsEnabled="True"/>
+        <MenuItem x:Name="MenuEtu" Header="Etudiants" Click="MenuItem_Click_2" IsEnabled="True" x:FieldModifier="public"/>
+        <MenuItem x:Name="MenuExporter" Header="Exporter" Click="MenuExporter_Click"/>
+        <MenuItem x:Name="MenuQuitter" Header="Quitter" Click="MenuItem_Click"/>
+    </Menu>
+</Window>
